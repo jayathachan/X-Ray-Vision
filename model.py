@@ -111,7 +111,7 @@ class One_Step_Decoder(tf.keras.layers.Layer):
     self.dense_dim = dense_dim
     self.embedding = Embedding(input_dim = vocab_size+1,
                                 output_dim = embedding_dim,
-                                input_length=max_pad,
+                                # input_length=max_pad,
                                 mask_zero=True, 
                                 name = 'onestepdecoder_embedding'
                               )
