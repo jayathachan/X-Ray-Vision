@@ -42,7 +42,7 @@ class Image_encoder(tf.keras.layers.Layer):
     super().__init__()
     self.chexnet = create_chexnet(input_size = (224,224))
     self.chexnet.trainable = False
-    self.avgpool = AveragePooling2D()
+    self.avgpool = AveragePooling2D(pool_size=(2, 2))
     # for i in range(10): #the last 10 layers of chexnet will be trained
     #   self.chexnet.layers[-i].trainable = True
     
