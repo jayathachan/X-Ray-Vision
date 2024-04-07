@@ -2,9 +2,12 @@ opencv_python_headless
 numpy
 nltk
 pandas
+gitpython
 tensorflow
+tensorflow_io_gcs_filesystem
 joblib
 streamlit
 Pillow
 scikit_learn
+keras_processing
 
