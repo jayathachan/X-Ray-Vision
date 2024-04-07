@@ -11,7 +11,7 @@ import cv2
 from nltk.translate.bleu_score import sentence_bleu
 
 
-chexnet_weights = "/Users/jayat/Desktop/capstone/brucechou1983_CheXNet_Keras_0.3.0_weights.h5"
+chexnet_weights = "brucechou1983_CheXNet_Keras_0.3.0_weights.h5"
 
 def create_chexnet(chexnet_weights = chexnet_weights,input_size=(224,224)):
   """
